@@ -1,0 +1,31 @@
+# Hermes runtime secrets/state - never publish
+.env
+auth.json
+hosts.yml
+credentials
+credentials.*
+memories/
+sessions/
+logs/
+home/
+workspace/
+state.db
+state.db-*
+*.sqlite
+*.sqlite3
+
+# Local/runtime caches
+__pycache__/
+*.py[cod]
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Skill-manager local state
+skills/.bundled_manifest
+skills/.curator_backups/
+skills/.curator_state
+skills/.hub/
+skills/.usage.json
+skills/.usage.json.lock

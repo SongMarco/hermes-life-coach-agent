@@ -1,0 +1,17 @@
+name: life-coach
+version: 0.1.0
+description: "A lightweight Hermes profile for daily scrum, journaling, reflection, routines, and optional Obsidian vault integration."
+hermes_requires: ">=0.14.0"
+author: "SongMarco"
+license: "MIT"
+
+# Optional: used by the bundled Obsidian journaling skill.
+env_requires:
+  - name: OBSIDIAN_VAULT_PATH
+    description: "Path to your Obsidian vault. If unset, the agent asks before writing notes."
+    required: false
+    default: ""
+  - name: LIFE_COACH_FOLDER
+    description: "Folder inside the vault for coaching notes."
+    required: false
+    default: "Life-Coaching"

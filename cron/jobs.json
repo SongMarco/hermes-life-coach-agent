@@ -1,0 +1,107 @@
+{
+  "jobs": [
+    {
+      "id": "life-coach-morning-checkin",
+      "name": "Life Coach Morning Check-in",
+      "prompt": "Send a concise morning life-coaching check-in. Ask: sleep/energy/mood, today's 1-3 must-do items, main risk, and the smallest first action. If the user answers with enough detail and Obsidian is configured, offer to save a daily check-in note using the obsidian-life-coach skill.",
+      "skills": [
+        "obsidian-life-coach"
+      ],
+      "skill": "obsidian-life-coach",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "display": "0 9 * * *"
+      },
+      "schedule_display": "0 9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": false,
+      "state": "paused",
+      "deliver": "origin",
+      "enabled_toolsets": [
+        "clarify",
+        "file",
+        "memory",
+        "session_search",
+        "skills",
+        "todo"
+      ],
+      "no_agent": false,
+      "script": null,
+      "context_from": null,
+      "workdir": null
+    },
+    {
+      "id": "life-coach-evening-review",
+      "name": "Life Coach Evening Review",
+      "prompt": "Send a concise evening review. Ask: what got done, what slipped and why, energy/mood pattern, and one adjustment for tomorrow. If the user wants, save the summary to Obsidian using the obsidian-life-coach skill.",
+      "skills": [
+        "obsidian-life-coach"
+      ],
+      "skill": "obsidian-life-coach",
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 22 * * *",
+        "display": "30 22 * * *"
+      },
+      "schedule_display": "30 22 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": false,
+      "state": "paused",
+      "deliver": "origin",
+      "enabled_toolsets": [
+        "clarify",
+        "file",
+        "memory",
+        "session_search",
+        "skills",
+        "todo"
+      ],
+      "no_agent": false,
+      "script": null,
+      "context_from": null,
+      "workdir": null
+    },
+    {
+      "id": "life-coach-weekly-review",
+      "name": "Life Coach Weekly Review",
+      "prompt": "Run a concise weekly life review. Cover wins, repeating blockers, health/energy/focus, money/career/runway signals, next week's 3 priorities, and one routine experiment. If Obsidian is configured, offer to save a weekly review note using the obsidian-life-coach skill.",
+      "skills": [
+        "obsidian-life-coach"
+      ],
+      "skill": "obsidian-life-coach",
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 21 * * 0",
+        "display": "0 21 * * 0"
+      },
+      "schedule_display": "0 21 * * 0",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": false,
+      "state": "paused",
+      "deliver": "origin",
+      "enabled_toolsets": [
+        "clarify",
+        "file",
+        "memory",
+        "session_search",
+        "skills",
+        "todo"
+      ],
+      "no_agent": false,
+      "script": null,
+      "context_from": null,
+      "workdir": null
+    }
+  ],
+  "updated_at": "2026-05-28T00:00:00+00:00"
+}

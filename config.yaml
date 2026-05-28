@@ -1,0 +1,47 @@
+# Minimal defaults for the public life-coach distribution.
+# Users should run `life-coach setup` or `hermes -p life-coach setup` after install
+# to configure their preferred model/provider and messaging platforms.
+
+timezone: local
+
+agent:
+  max_turns: 20
+
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+
+display:
+  personality: concise
+
+skills:
+  external_dirs: []
+  template_vars: true
+
+# Keep the profile light. Add web/browser/delegation only if you want this
+# agent to become a researcher or automation agent.
+platform_toolsets:
+  cli:
+    - clarify
+    - cronjob
+    - file
+    - memory
+    - session_search
+    - skills
+    - todo
+  discord:
+    - clarify
+    - cronjob
+    - file
+    - memory
+    - session_search
+    - skills
+    - todo
+  telegram:
+    - clarify
+    - cronjob
+    - file
+    - memory
+    - session_search
+    - skills
+    - todo
