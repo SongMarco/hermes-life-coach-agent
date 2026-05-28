@@ -17,9 +17,11 @@ This is intentionally **not** a research, coding, browser automation, or therapy
 hermes profile install github.com/SongMarco/hermes-life-coach-agent --alias
 ```
 
-Then configure your model/provider:
+Then configure/authenticate the default model provider if needed. This distribution defaults to **OpenAI Codex OAuth + GPT-5.5**:
 
 ```bash
+hermes -p life-coach login --provider openai-codex
+# or use the setup wizard if you want a different provider/model
 life-coach setup
 # or
 hermes -p life-coach setup

@@ -4,6 +4,11 @@
 
 timezone: local
 
+model:
+  provider: openai-codex
+  default: gpt-5.5
+  base_url: https://chatgpt.com/backend-api/codex
+
 agent:
   max_turns: 20
 
