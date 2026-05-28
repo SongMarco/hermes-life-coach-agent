@@ -1,5 +1,5 @@
 name: life-coach
-version: 0.1.0
+version: 0.1.2
 description: "A lightweight Hermes profile for daily scrum, journaling, reflection, routines, and optional Obsidian vault integration."
 hermes_requires: ">=0.14.0"
 author: "SongMarco"
